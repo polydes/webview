@@ -93,9 +93,6 @@ class WebView  {
 		?useWideViewPort :Bool = false,						// Android only
 		?mediaPlaybackRequiresUserGesture :Bool = true		// Android only
 	) :Void {
-		if (html == ""){
-			html = Assets.getText("assets/data/com.byrobingames.manager/webview.html");
-		}
 		init();
 		#if android
 			var obj = {
