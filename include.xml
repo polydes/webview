@@ -8,8 +8,8 @@
 	</section>
 
 	<section if="ios">
-        <setenv name="WEBVIEW_ENABLED" value="true"/>
 		<dependency name="UIKit.framework" />
+        <template path="templates" />
 	</section>
 
 </extension>
