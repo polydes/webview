@@ -19,7 +19,12 @@ import lime.system.JNI;
 import openfl.Assets;
 
 import haxe.Json;
-	
+
+#if ios
+@:buildXml('<include name="${haxelib:webview}/project/build.xml"/>')
+//This is just here to prevent the otherwise indirectly referenced native code from being stripped at link time.
+@:cppFileCode('extern "C" int webviewex_register_prims();void com_byrobin_webviewex_link(){webviewex_register_prims();}')
+#end
 class WebView  {
 
 	private static var initialized :Bool = false;
