@@ -11,6 +11,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
+	namespace 'extensions.webview'
 	sourceSets {
 		main {
 			manifest.srcFile 'AndroidManifest.xml'
