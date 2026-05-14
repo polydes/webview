@@ -1,0 +1,26 @@
+{
+  "group": "com.polydes.byrobin",
+  "id": "webview",
+  "name": "WebViews for IOS and Android",
+  "description": "Implements webviews for mobile Android and iOS.",
+  "tags": ["ui"],
+  "type": "game",
+  "author": "Robin Schaafsma",
+  "repository": "https://www.polydes.com/byrobingames",
+  "website": "https://www.polydes.com/byrobingames/engine/webview",
+  "target": "stencyl-4.2.0",
+  "version": "2.5.0",
+
+  "icon": "icon.png",
+
+  "toolset": {
+    "root": "toolset",
+    "mainClass": "com.polydes.webview.WebviewExtension",
+    "internalVersion": "1"
+  },
+
+  "engine": {
+    "root": "engine",
+    "compatibility": "mobile"
+  }
+}

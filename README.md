@@ -4,11 +4,9 @@ For Stencyl 3.4 and above
 
 Stencyl extension for "Webview" on iOS and Android. This extension allows you to easily integrate Webview (in-ap browser) on your Stencyl game / application. (http://www.stencyl.com)
 
-### IMPORTENT
+### IMPORTANT
 
 Because of App Transport Security (ATS) in IOS9, HTTP will not loads in IOS9.
-
-This Extension Required the Toolset Extension Manager [https://byrobingames.github.io](https://byrobingames.github.io)
 
 ![webviewtoolset](https://byrobingames.github.io/img/webview/webviewtoolset.png)
 
@@ -106,29 +104,6 @@ Like this: [“(http|https)://(.`*`)github.com(.`*`)”,”http://website.com”
 - 2017-05-18(2.4.2) FIX: Single/Double quotes not accepted
 - 2019-01-01(2.4.3) FIX: Android JNI import.
 - 2019-01-04(2.4.4) SETENV to set NSAllowsArbitraryLoads in iOS template in byRobinextensionmanager 0.2.0>
-
-## Submitting a Pull Request
-
-This software is opensource.<br/>
-If you want to contribute you can make a pull request
-
-Repository: [https://github.com/byrobingames/webview2.0](https://github.com/byrobingames/webview2.0)
-
-Need help with a pull request?<br/>
-[https://help.github.com/articles/creating-a-pull-request/](https://help.github.com/articles/creating-a-pull-request/)
-
-## ANY ISSUES?
-
-Add the issue on GitHub<br/>
-Repository: [https://github.com/byrobingames/webview2.0/issues](https://github.com/byrobingames/webview2.0/issues)
-
-Need help with creating a issue?<br/>
-[https://help.github.com/articles/creating-an-issue/](https://help.github.com/articles/creating-an-issue/)
-
-
-## Donate
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HKLGFCAGKBMFL)<br />
 
 ## License
 
