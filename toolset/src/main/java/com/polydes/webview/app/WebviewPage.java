@@ -1,12 +1,11 @@
-package com.byrobingames.manager.app.pages;
+package com.polydes.webview.app;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.*;
 
-import com.byrobingames.manager.ByRobinGameExtension;
-
+import com.polydes.webview.WebviewExtension;
 import stencyl.app.comp.UI;
 import stencyl.app.comp.dg.DialogPanel;
 import stencyl.app.lnf.Fonts;
@@ -45,7 +44,7 @@ public class WebviewPage extends JPanel
 		
 		htmlArea = new JTextArea();
 		htmlArea.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));	
-		htmlArea.setText(ByRobinGameExtension.WVHTMLCODE);
+		htmlArea.setText(WebviewExtension.WVHTMLCODE);
 		htmlArea.setLineWrap(true);
 		htmlArea.setWrapStyleWord(true);
 		JScrollPane scroll = UI.createScrollPane(htmlArea);
@@ -58,7 +57,7 @@ public class WebviewPage extends JPanel
 	
 	public void save()
 	{
-		ByRobinGameExtension.WVHTMLCODE = htmlArea.getText();
+		WebviewExtension.WVHTMLCODE = htmlArea.getText();
 		
 		revalidate();
 		repaint();

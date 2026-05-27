@@ -16,6 +16,9 @@
   "toolset": {
     "root": "toolset",
     "mainClass": "com.polydes.webview.WebviewExtension",
+    "dependencies": [
+      "platform:ch.qos.reload4j:reload4j"
+    ],
     "internalVersion": "1"
   },
 
