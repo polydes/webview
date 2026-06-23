@@ -93,18 +93,6 @@ Like this: [“(http|https)://(.`*`)github.com(.`*`)”,”http://website.com”
 (http|https) = looks if the website is http or https<br/>
 (.`*`) = can be everything,  if  the website have submaps.<br/>
 
-## Version History
-
-- (2.0)  new release
-- (2.1) Enabled Javascript for Android (IOS enabled by default)
-- (2.2) Update info.txt file.
-- (2.3) Add icon on block
-- 2017-03-21(2.4) Added Android Gradle Support for openfl4 and added open webview with HTML Code block
-- 2017-05-16(2.4.1) Tested for Stencyl 3.5, Required byRobin Toolset Extension Manager
-- 2017-05-18(2.4.2) FIX: Single/Double quotes not accepted
-- 2019-01-01(2.4.3) FIX: Android JNI import.
-- 2019-01-04(2.4.4) SETENV to set NSAllowsArbitraryLoads in iOS template in byRobinextensionmanager 0.2.0>
-
 ## License
 
 build For OpenFl.<br/>
