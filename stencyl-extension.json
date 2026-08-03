@@ -7,7 +7,7 @@
   "type": "game",
   "author": "Robin Schaafsma",
   "repository": "https://www.polydes.com/byrobingames",
-  "website": "https://www.polydes.com/byrobingames/engine/webview",
+  "website": "https://www.polydes.com/byrobingames/extensions/webview",
   "target": "stencyl-4.2.0",
   "version": "2.5.0",
 
