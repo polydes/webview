@@ -1,7 +1,8 @@
 package com.polydes.webview;
 
-import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import javax.swing.JPanel;
 
@@ -40,9 +41,9 @@ public class WebviewExtension extends GameExtension
 		owner().getAddons().setAddon(GameLibrary.DASHBOARD_SIDEBAR_PAGE_ADDONS, sidebarPage);
 
 		try {
-			String datafolderlocation = ((Game) getProject()).getFiles().getExtensionGameDataLocation("com.byrobingames.manager");
-			File wvFile = new File(datafolderlocation + "webview.html");
-			if(wvFile.exists())
+			Path datafolderlocation = ((Game) getProject()).getFiles().getExtensionGameDataLocation("com.byrobingames.manager");
+			Path wvFile = datafolderlocation.resolve("webview.html");
+			if(Files.exists(wvFile))
 			{
 				WVHTMLCODE = FileHelper.readFileToString(wvFile);
 			}
@@ -63,8 +64,8 @@ public class WebviewExtension extends GameExtension
 		try {
 			Game game = (Game) getProject();
 
-			String datafolderlocation = game.getFiles().getExtensionGameDataLocation("com.byrobingames.manager");
-			FileHelper.writeStringToFile(datafolderlocation + File.separator + "webview.html", WVHTMLCODE);
+			Path datafolderlocation = game.getFiles().getExtensionGameDataLocation("com.byrobingames.manager");
+			FileHelper.writeStringToFile(datafolderlocation.resolve("webview.html"), WVHTMLCODE);
 
 		} catch (IOException e) {
 			log.error(e.getMessage(), e);
@@ -74,8 +75,8 @@ public class WebviewExtension extends GameExtension
 	@Override
 	public void onGameBuild() {
 		try {
-			String assetsDataDir = Locations.getHXProjectDir(getProject()) + "Assets/data/com.byrobingames.manager";
-			FileHelper.writeStringToFile(assetsDataDir + "/webview.html", WVHTMLCODE);
+			Path assetsDataDir = Locations.getHXProjectDir(getProject()).resolve("Assets/data/com.byrobingames.manager");
+			FileHelper.writeStringToFile(assetsDataDir.resolve("webview.html"), WVHTMLCODE);
 		} catch (IOException e) {
 			log.error(e.getMessage(), e);
 		}
