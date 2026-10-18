@@ -18,6 +18,8 @@ import stencyl.core.io.FileHelper;
 import stencyl.sw.app.center.GameLibrary;
 import stencyl.sw.core.lib.game.Game;
 
+import static stencyl.sw.core.lib.game.GameLocations.GAME_EXPORT_OPENFL;
+
 public class WebviewExtension extends GameExtension
 {
 	//webview
@@ -75,7 +77,7 @@ public class WebviewExtension extends GameExtension
 	@Override
 	public void onGameBuild() {
 		try {
-			Path assetsDataDir = Locations.getHXProjectDir(getProject()).resolve("Assets/data/com.byrobingames.manager");
+			Path assetsDataDir = getProject().getPath(GAME_EXPORT_OPENFL, "Assets/data/com.byrobingames.manager");
 			FileHelper.writeStringToFile(assetsDataDir.resolve("webview.html"), WVHTMLCODE);
 		} catch (IOException e) {
 			log.error(e.getMessage(), e);
